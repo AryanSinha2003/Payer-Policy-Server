@@ -1,3 +1,6 @@
+
+import os
+# Prevent ONNX Runtime from hanging on restricted CPU environments (Render Free Tier)
 import logging
 from typing import List
 from langchain_pinecone import PineconeVectorStore
@@ -5,6 +8,10 @@ from langchain_core.documents import Document
 from langchain_core.messages import HumanMessage
 from flashrank import Ranker, RerankRequest
 from config import *
+
+os.environ["OMP_NUM_THREADS"] = "1"
+os.environ["MKL_NUM_THREADS"] = "1"
+os.environ["OPENBLAS_NUM_THREADS"] = "1"
 
 # Logging setup
 logging.basicConfig(level=logging.INFO)
