@@ -7,7 +7,7 @@ from data_processing import SessionDocStore
 from rag_engine import run_advanced_rag
 
 # Initialize the MCP Server
-mcp = FastMCP("PDF-QA-Server",host="0.0.0.0",port="8001")
+mcp = FastMCP("PDF-QA-Server", host="0.0.0.0", port=int(os.environ.get("PORT", 8000)))
 
 # Global variables to hold the retrievers
 _bm25_retriever = None
