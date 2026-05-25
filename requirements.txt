@@ -1,0 +1,12 @@
+mcp
+fastmcp
+pinecone-client
+langchain
+langchain-core
+langchain-community
+langchain-pinecone
+langchain-openai
+langchain-huggingface
+unstructured[pdf]
+python-dotenv
+flashrank
