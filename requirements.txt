@@ -1,3 +1,4 @@
+python==3.11.1
 mcp==1.26.0
 fastmcp==3.1.1
 pinecone==7.3.0
@@ -9,5 +10,4 @@ langchain-openai==1.1.6
 langchain-huggingface==1.2.2
 unstructured[pdf]==0.17.2
 python-dotenv==1.2.2
-tokenizers==0.22.2
 flashrank==0.2.10
